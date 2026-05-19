@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-neon-green: #00ff00;
+  --color-dark-green: #003300;
+  --color-charcoal: #121212;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-neon-green selection:text-black;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Cfilter id='noiseFilter'%3%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded-full hover:bg-neon-green/50 transition-colors;
+}
+
