@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import SelectedWorks from './components/SelectedWorks';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -86,6 +87,7 @@ export default function App() {
         <div className="relative">
           <About />
           <Skills />
+          <SelectedWorks />
           <Experience />
           <Contact />
           <Footer />
