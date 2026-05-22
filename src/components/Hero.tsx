@@ -95,9 +95,10 @@ export default function Hero() {
           {/* Portrait Illustration */}
           <div className="relative aspect-[3/4] w-full max-w-[260px] mx-auto overflow-hidden rounded-2xl group sm:max-w-xs md:max-w-sm">
             <img 
-              src="https://lh3.googleusercontent.com/d/1WBbjVmoFJztGCbYwnLMu0tIF6kwxwbIM" 
+              src="https://drive.google.com/thumbnail?id=1WBbjVmoFJztGCbYwnLMu0tIF6kwxwbIM&sz=w1000" 
               alt="Sonu Kumar" 
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
             

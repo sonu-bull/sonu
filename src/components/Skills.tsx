@@ -1,14 +1,14 @@
 import { motion } from 'motion/react';
 
 const skills = [
-  { name: 'Adobe Photoshop', level: 95, category: 'Design' },
-  { name: 'Illustrator', level: 90, category: 'Design' },
+  { name: 'Adobe Photoshop', level: 80, category: 'Design' },
+  { name: 'Adobe Illustrator', level: 75, category: 'Design' },
   { name: 'Premiere Pro', level: 78, category: 'Video' },
   { name: 'CorelDRAW', level: 85, category: 'Print' },
   { name: 'Canva', level: 95, category: 'Design' },
-  { name: 'Figma', level: 80, category: 'UI/UX' },
-  { name: 'Video Editing', level: 99, category: 'Motion' },
-  { name: 'Motion Graphics', level: 85, category: 'Motion' },
+  { name: 'Figma', level: 60, category: 'UI/UX' },
+  { name: 'Video Editing', level: 80, category: 'Motion' },
+  { name: 'Motion Graphics', level: 60, category: 'Motion' },
   { name: 'Branding Design', level: 92, category: 'Branding' },
   { name: 'Social Media Design', level: 96, category: 'Marketing' },
 ];
